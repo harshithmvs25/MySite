@@ -2,13 +2,22 @@
 #main{
     text-align: center;
     width: 100%;
-    height: 665px;
+    height: 675px;
     background-image: url(images/background.jpg);
     background-size: 100%;
 }
                             
 #navbar{
     background-color: rgb(147, 239, 209);
+}
+
+
+#projects{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 675px;
 }
 
 
@@ -23,13 +32,14 @@
                             
                             
 .container{
-    height: 700px; 
+    height: 680px; 
     display: flex;
     flex-direction: column;
     justify-content: center;                              
     }
-                            
-                            
+                      
+    
+                         
                             
 .link{
     margin: 30px 20px 0px;
