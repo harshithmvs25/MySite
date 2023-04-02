@@ -54,12 +54,15 @@
     font-family: 'Dancing Script', cursive;
     line-height: 2rem;
     color: white;
+    animation: moveInLeft 3s;
     }
                             
 .pimg{
     height: 225px;
     width: 225px;
     margin-bottom: 20px;
+    animation-name: visibility;
+    animation-duration: 3s;
     }
                             
 .plinks{
@@ -67,6 +70,8 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    animation-name: moveInRight;
+    animation-duration: 3s;
     }
                             
 .nlinks{
@@ -75,3 +80,34 @@
     }
                             
                             
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes visibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
