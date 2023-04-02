@@ -73,6 +73,14 @@
     animation-name: moveInRight;
     animation-duration: 3s;
     }
+
+.l1:hover,.l2:hover,.l3:hover,.l4:hover,.l5:hover{
+    transform: translateY(-5px);
+}
+
+.l1:active,.l2:active,.l3:active,.l4:active,.l5:active{
+    transform: translateY(5px);
+}
                             
 .nlinks{
     margin-left: 20px;
